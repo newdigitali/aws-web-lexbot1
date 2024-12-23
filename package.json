@@ -1,0 +1,35 @@
+{
+  "name": "aws-web-lexbot1",
+  "version": "1.0.0",
+  "description": "lex webbot",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "aws s3 sync ./build s3://lex-web-ui-codebuilddeploy-1a04w96bjw-webappbucket-p23hyyzyxvap --delete",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newdigitali/aws-web-lexbot1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newdigitali/aws-web-lexbot1/issues"
+  },
+  "homepage": "https://github.com/newdigitali/aws-web-lexbot1#readme",
+  "dependencies": {
+    "-": "^0.0.1",
+    "@vue/cli": "^5.0.8",
+    "aws-sdk": "^2.1692.0",
+    "core-js": "^3.39.0",
+    "g": "^2.0.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.0",
+    "aws-cli": "^0.0.2",
+    "s3-deploy": "^1.4.0"
+  }
+}
